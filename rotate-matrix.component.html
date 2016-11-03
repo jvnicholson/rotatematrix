@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row"
+         ng-repeat="row in $ctrl.original">
+        <span class="element"
+              ng-repeat="element in row">{{ ::element }}</span>
+    </div>
+</div>
+<div class="container">
+    <div class="row"
+         ng-repeat="row in $ctrl.rotated">
+        <span class="element"
+              ng-repeat="element in row track by $index">{{ ::element }}</span>
+    </div>
+</div>
